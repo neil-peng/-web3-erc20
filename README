@@ -1,0 +1,30 @@
+# web3-erc20-token
+
+token地址：https://sepolia.etherscan.io/token/0x9Dd5BB2D8E37bA2505175B82A2d9D8d8889F4b17
+
+```
+yarn init
+yarn add --dev hardhat
+yarn hardhat init
+choose : Create a JavaScript project
+yarn hardhat compile
+```
+
+##部署
+yarn hardhat run scripts/deploy.js --network sepolia
+
+##测试链 sepolia 准备
+节点服务：选择使用 alchemy，或者钱包中配置的 sepolia 地址
+
+##erc20基本实现
+##erc20的基于openzepplelin实现
+###openzeppelin
+    yarn add @openzeppelin/contracts
+    ```
+    hardhat.config.js中配置适配的solidity版本
+    module.exports = {
+        solidity : {
+        compilers : [{version:"0.8.7"}, {version:"0.4.2"}]
+            }
+    }
+    ```
